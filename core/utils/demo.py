@@ -266,6 +266,10 @@
 # with open('/Users/mac/Documents/test.txt','r+') as fr:
 # 	print(fr.read())
 
-import sys,os
-# print(sys.argv)
-print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# import sys,os
+# # print(sys.argv)
+# print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
+d = {'1':1,"2":2}
+print(d.get("3",0))

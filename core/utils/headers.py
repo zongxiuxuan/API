@@ -1,48 +1,43 @@
 import requests
 import json
 import urllib3
-
+from requests_toolbelt import MultipartEncoder
 
 def headers(tokenid=None):
-    if tokenid is None:
+    if tokenid:
         return {
-            'Content-Type': 'application/json;charset=utf-8'
-        }
-    else:
-        return {
-            'Content-Type': 'application/json;charset=utf-8',
             'authorization': str(tokenid)
         }
 
 
 # set a new headers
 def headers_new(a=None, b=None):
-    if a is None:
+    if a and b :
         return {
-            'Content-Type': 'application/json;charset=utf-8',
-        }
-    else:
-        return {
-            'Content-Type': 'application/json;charset=utf-8',
             a: b
         }
 
 
 # post
-def post(url, data=None, token=None, form=None, file=None):
+def post(url, json=None, token=None, data=None, filepath=None):
     if not token:
         header = headers()
     else:
         header = headers(token)
-    if data:
+    if json:
         urllib3.disable_warnings()
-        r = requests.post(url, json.dumps(data), headers=header, verify=False)
-    elif form:
+        r = requests.post(url, json=json, headers=header, verify=False)
+    elif data and not filepath:
         urllib3.disable_warnings()
-        r = requests.post(url, data=form, headers=header, verify=False)
-    elif file:
+        r = requests.post(url, data=data, headers=header, verify=False)
+    elif data and filepath:
         urllib3.disable_warnings()
-        r = requests.post(url, files=file, headers=header, verify=False)
+        params={}
+        for k,v in data.items():
+            params[k]=(None,str(v))
+        params['files'] = (filepath.split('/')[-1],open(filepath,'rb'))
+        print(f'params is {params}')
+        r = requests.post(url,headers=header,files=params,verify=False)
     else:
         urllib3.disable_warnings()
         r = requests.post(url, '{}', headers=header, verify=False)

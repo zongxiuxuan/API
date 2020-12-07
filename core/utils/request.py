@@ -1,7 +1,8 @@
 import requests
-import json
 import urllib3
 import logging
+from core.utils import log
+log.Logging()
 
 
 def headers(tokenid=None):
@@ -56,11 +57,17 @@ def request(method, url, json=None, params=None, token=None, files=None, verify=
     status_code = response.status_code
 
     logging.info("-" * 100)
-    logging.info('[ api name    ] : {}'.format(url.rsplit("/")[-1]))
-    logging.info('[ request url ] : {}'.format(response.url))
-    logging.info('[ method      ] : {}'.format(method.upper()))
-    logging.info('[ status code ] : {}'.format(status_code))
-    logging.info('[ time total  ] : {} s'.format(time_total))
+    logging.info('[      api      ] : {}'.format(url))
+    logging.info('[  request url  ] : {}'.format(response.url))
+    logging.info('[     method    ] : {}'.format(method.upper()))
+    if json:
+        logging.info(f'[  request data ] : {json}')
+    if params:
+        logging.info(f'[  request data ] : {params}')
+    if files:
+        logging.info(f'[  request data ] : {files}')
+    logging.info('[  status code  ] : {}'.format(status_code))
+    logging.info('[   time total  ] : {} s'.format(time_total))
 
     if "application/json" in response.headers.get("Content-Type"):
         logging.info('[ response json ] : %s' % response.json())
@@ -72,7 +79,7 @@ def request(method, url, json=None, params=None, token=None, files=None, verify=
 
 
 # post
-def post(url, json=None, token=None, param=None, file=None):
+def post(url, payload=None, token=None, params=None, file=None):
     """
     :param url: 请求url地址
     :param json: 参数类型为json，传{}
@@ -81,46 +88,25 @@ def post(url, json=None, token=None, param=None, file=None):
     :param file: 上传文件的key值和地址，传()
     :return: response
     """
-    if json:
-        r = request('POST', url=url, json=json, token=token)
-    elif param and not file:
-        r = request('POST', params=param, token=token)
-    elif param and file:
-        params = {}
-        for k, v in param.items():
+    if file:
+        for k, v in params.items():
             params[k] = (None, str(v))
         params[file[0]] = (file[1].split('/')[-1], open(file[1], 'rb'))
-        r = request('POST', url=url, token=token, files=params)
-    elif not param and file:
-        file = {file[0]: (file[1].split('/')[-1], open(file[1], 'rb'))}
-        r = request('POST', url=url, token=token, files=file)
+        return request('POST', url=url, token=token, files=params)
     else:
-        r = request('POST', url=url, json='{}', token=token)
-    return r
+        return request('POST', url=url, json=payload, params=params, token=token, files=file)
 
 
 # get
 def get(url, params=None, token=None):
-    if not params:
-        r = request('GET', url=url, token=token)
-    else:
-        r = request('GET', url=url, params=params, token=token)
-    return r
+    return request('GET', url=url, params=params, token=token)
 
 
 # put
-def put(url, data=None, token=None):
-    if data is None:
-        r = request('PUT', url, '{}', token=token)
-    else:
-        r = request('PUT', url, json=data, token=token)
-    return r
+def put(url, payload=None, token=None):
+    return request('PUT', url=url, json=payload, token=token)
 
 
 # delete
-def delete(url, token=None, params=None):
-    if params:
-        r = request('DELETE', url, json=params, token=token)
-    else:
-        r = request('DELETE', url, token=token)
-    return r
+def delete(url, token=None, payload=None):
+    return request('DELETE', url, json=payload, token=token)

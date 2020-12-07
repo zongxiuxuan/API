@@ -23,7 +23,7 @@ class Logging:
         """
             第一步，初始化 log 目录
         """
-        day_time = time.strftime('%Y-%m-%d', time.localtime(time.time()))  # 2020-04-20
+        day_time = time.strftime('%Y-%m-%d', time.localtime(time.time()))  # 2020-12-07
 
         path = getDir.proDir  # 项目路径
 
@@ -39,19 +39,19 @@ class Logging:
         # a 代表继续写log，不覆盖之前log
         # w 代表重新写入，覆盖之前log
         file_handler = logging.FileHandler(log_file, mode='a+')
-        file_handler.setLevel(logging.DEBUG)
+        file_handler.setLevel(logging.INFO)
 
         """
             第三步，再创建一个handler，用于输出到控制台
         """
         stdout_handler = logging.StreamHandler(sys.stdout)
-        stdout_handler.setLevel(logging.DEBUG)
+        stdout_handler.setLevel(logging.INFO)
 
         """
             第四步，定义handler的输出格式
         """
         formatter = logging.Formatter(
-            "[%(levelname)s - %(asctime)s - %(filename)s - %(funcName)s] : %(message)s"
+            "[%(levelname)s - %(asctime)s - %(filename)s ] : %(message)s"
         )
         file_handler.setFormatter(formatter)
         # error_file_handler.setFormatter(formatter)
@@ -61,7 +61,7 @@ class Logging:
             第五步，将logger添加到handler里面
         """
         logger = logging.getLogger()
-        logger.setLevel(logging.DEBUG)
+        logger.setLevel(logging.INFO)
         logger.handlers = []
 
         logger.addHandler(file_handler)

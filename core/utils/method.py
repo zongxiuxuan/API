@@ -6,6 +6,7 @@ import arrow
 from faker import Factory
 import os
 import time
+import logging
 
 """
 创建测试数据方法
@@ -13,15 +14,25 @@ import time
 f = Factory().create('zh-CN')
 
 
-# 获取根目录
-def rootPath():
-    # 获取当前文件路径
-    currentDir = os.path.abspath(os.path.dirname(__file__))
-    # 截取根目录路径
-    proDir = os.path.split(currentDir)[0]
-    # # 获取当前路径
-    # get_currentDir = os.path.dirname(os.getcwd())
-    return proDir
+def mkdir(dir_path):
+    """ 创建路径
+    """
+    # 去除首位空格
+    _dir = dir_path.strip()
+    _dir = dir_path.rstrip("\\")
+    _dir = dir_path.rstrip("/")
+
+    # 判断路径是否存在
+    is_exists = os.path.exists(_dir)
+
+    if not is_exists:
+        try:
+            os.makedirs(_dir)
+        except Exception as e:
+            logging.error("Directory creation failed：%s" % e)
+    else:
+        # 如果目录存在则不创建，并提示目录已存在
+        logging.debug("Directory already exists：%s" % str(_dir))
 
 
 # 随机取任意长度数字字符

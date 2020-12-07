@@ -89,10 +89,8 @@ class Excel:
 
 if __name__ == '__main__':
     # s = "'测试1店'"
-    # print(eval(s))
-    # print(_email())
-    # print(random_time())
     a = Excel()
-    a.write_excel(r'C:\Users\87859\Desktop\GR.xlsx', 'JG.xlsx', 50000)
+    path = r'C:\Users\87859\Desktop\GR.xlsx'
+    a.write_excel(path, 'JG.xlsx', 50000)
     # b = a.read_excel('个人联系人导入模板 (13).xlsx')
     # print(b)

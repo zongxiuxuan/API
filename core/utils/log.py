@@ -1,47 +1,80 @@
-import logging
-import logging.handlers
-from Common import getDir, method
-from loguru import logger
 import os
+import sys
+import time
+import logging
+
+from core.utils.method import mkdir
+from core.utils import getDir
 
 
-proDir = getDir.proDir
-ReportDir = os.path.join(proDir, "Output", "API_report", "log", method.getFormatTime(format='YYYY_MM_DD') + ".log")
-logger.add(ReportDir, level='ERROR', encoding='utf-8', format='{time:YYYY-MM-DD HH:mm:ss} {level} {function} {message}')
-lg = ''
+class Logging:
+    """setup logging
+
+    Examples:
+        >>> import logging
+        >>> Logging()
+        >>> logging.debug("this is debug message")
+
+    """
+
+    def __init__(self):
+        """ settings logging
+        """
+        """
+            第一步，初始化 log 目录
+        """
+        day_time = time.strftime('%Y-%m-%d', time.localtime(time.time()))  # 2020-04-20
+
+        path = getDir.proDir  # 项目路径
+
+        log_folder = f"{path}/log"
+
+        mkdir(log_folder)
+
+        log_file = f"{log_folder}/{day_time}.log"
+
+        """
+            第二步，创建一个handler，用于写入全部info日志文件
+        """
+        # a 代表继续写log，不覆盖之前log
+        # w 代表重新写入，覆盖之前log
+        file_handler = logging.FileHandler(log_file, mode='a+')
+        file_handler.setLevel(logging.DEBUG)
+
+        """
+            第三步，再创建一个handler，用于输出到控制台
+        """
+        stdout_handler = logging.StreamHandler(sys.stdout)
+        stdout_handler.setLevel(logging.DEBUG)
+
+        """
+            第四步，定义handler的输出格式
+        """
+        formatter = logging.Formatter(
+            "[%(levelname)s - %(asctime)s - %(filename)s - %(funcName)s] : %(message)s"
+        )
+        file_handler.setFormatter(formatter)
+        # error_file_handler.setFormatter(formatter)
+        stdout_handler.setFormatter(formatter)
+
+        """
+            第五步，将logger添加到handler里面
+        """
+        logger = logging.getLogger()
+        logger.setLevel(logging.DEBUG)
+        logger.handlers = []
+
+        logger.addHandler(file_handler)
+        logger.addHandler(stdout_handler)
 
 
-def init_log(filename=""):
-    # 1.创建1个logger对象：
-    # 初始化记录错误日志
-    proDir = getDir.proDir
-    lg = logging.getLogger("Error")
-    lg.setLevel(level=logging.INFO)
-    ReportDir = os.path.join(proDir, "Output", "API_report", "log", filename, method.getFormatTime(format='YYYY_MM_DD') + ".log")
-    if len(lg.handlers) == 0:  # 避免重复
-        # 2.创建handler(负责输出，输出到屏幕streamhandler,输出到文件filehandler)
-        fh = logging.FileHandler(ReportDir, mode="a", encoding="utf-8")
-        fh.setLevel(level=logging.ERROR)
-        sh = logging.StreamHandler()
-        sh.setLevel(level=logging.INFO)
-        # 3.创建formatter：
-        formatter=logging.Formatter(fmt='%(asctime)s - %(levelname)s - Model:%(filename)s - Fun:%(funcName)s - Message:%(message)s ')
-        # 4.绑定关系：①logger绑定handler
-        lg.addHandler(fh)
-        lg.addHandler(sh)
-        # # ②为handler绑定formatter
-        fh.setFormatter(formatter)
-        sh.setFormatter(formatter)
-    return lg
+if __name__ == '__main__':
+    Logging()
 
 
-# 格式化log输出
-def format_log(rescode, url, data, text):
-    log = '\n$res_code: {rescode}\n$posturl: {posturl}\n' \
-          '$postdata: {postdata}\n$resdata: {rsdata}\n---' \
-        .format(rescode=rescode, posturl=url, postdata=data, rsdata=text)
-    return log
+    def testaaa():
+        logging.debug("test")
+        logging.error("test")
 
 
-if lg == '':
-    lg = init_log()
+    testaaa()

@@ -1,0 +1,14 @@
+user:
+  group_tree:
+    get_group_tree: '/api/user/group_tree/'
+    put_group_tree: '/api/user/v2/group_tree/'
+    post_upload: '/api/user/groups/upload/'
+qdes:
+  folders:
+    get_folders: '/api/qdes/v3/projects/folders/'
+    put_folders: '/api/qdes/v3/projects/folders/'
+    put_move_project: '/api/qdes/v3/projects/{ID}/folder'
+  qdes:
+    post_creat_project: '/api/qdes/v3/projects/'
+    post_lib_creat_project: '/api/qdes/libprojects/qstruct/{ID}'
+    post_copy_project: '/qdes/v3/projects/{ID}/copy/'

@@ -2,6 +2,7 @@ import requests
 import urllib3
 import logging
 from core.utils import log
+
 log.Logging()
 
 
@@ -20,14 +21,15 @@ def headers_new(a=None, b=None):
         }
 
 
-env = ''
+env = 'https://bvt.xm-test.bestcem.com'
 
 
-def request(method, url, json=None, params=None, token=None, files=None, verify=False):
-    if env == '':
-        _url = url
+def request(method, url: str, json=None, params=None, token=None, files=None, verify=False, ID=None):
+    if env:
+        id_url = url.format(ID=ID)
+        _url = f'{env}{id_url}'
     else:
-        _url = f'{env}{url}'
+        _url = url
     if not token:
         header = headers()
     else:
@@ -79,7 +81,7 @@ def request(method, url, json=None, params=None, token=None, files=None, verify=
 
 
 # post
-def post(url, payload=None, token=None, params=None, file=None):
+def post(url, payload=None, token=None, params=None, file=None, ID=None):
     """
     :param url: 请求url地址
     :param json: 参数类型为json，传{}
@@ -92,21 +94,21 @@ def post(url, payload=None, token=None, params=None, file=None):
         for k, v in params.items():
             params[k] = (None, str(v))
         params[file[0]] = (file[1].split('/')[-1], open(file[1], 'rb'))
-        return request('POST', url=url, token=token, files=params)
+        return request('POST', url=url, token=token, files=params, ID=ID)
     else:
-        return request('POST', url=url, json=payload, params=params, token=token, files=file)
+        return request('POST', url=url, json=payload, params=params, token=token, ID=ID)
 
 
 # get
-def get(url, params=None, token=None):
-    return request('GET', url=url, params=params, token=token)
+def get(url, params=None, token=None, ID=None):
+    return request('GET', url=url, params=params, token=token, ID=ID)
 
 
 # put
-def put(url, payload=None, token=None):
-    return request('PUT', url=url, json=payload, token=token)
+def put(url, payload=None, token=None, ID=None):
+    return request('PUT', url=url, json=payload, token=token, ID=ID)
 
 
 # delete
-def delete(url, token=None, payload=None):
-    return request('DELETE', url, json=payload, token=token)
+def delete(url, token=None, payload=None, ID=None):
+    return request('DELETE', url, json=payload, token=token, ID=ID)

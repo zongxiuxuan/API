@@ -8,8 +8,9 @@ class User:
     """
     user模块
     """
-    pass
-
+    CREAT_USER = r'/api/user/users/'
+    EDIT_USER = r'/api/user/users/{ID}'
+    
 
 class Qdes:
     """

@@ -10,5 +10,12 @@ qdes:
     put_move_project: '/api/qdes/v3/projects/{ID}/folder'
   qdes:
     post_creat_project: '/api/qdes/v3/projects/'
+    delete_project: '/api/qdes/v3/projects/'
+    put_project: '/api/qdes/v3/projects/'
     post_lib_creat_project: '/api/qdes/libprojects/qstruct/{ID}'
     post_copy_project: '/qdes/v3/projects/{ID}/copy/'
+    post_import_project: '/api/qdes/v3/projects/import/'
+    put_project_title: '/api/qdes/v3/projects/{ID}/title/'
+    get_project_list: '/api/qdes/v3/projects/'
+    get_project_folders: '/api/qdes/v3/projects/folders/'
+    post_project_release: '/api/qdes/projects/{ID}/release/'

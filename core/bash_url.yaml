@@ -3,6 +3,18 @@ user:
     get_group_tree: '/api/user/group_tree/'
     put_group_tree: '/api/user/v2/group_tree/'
     post_upload: '/api/user/groups/upload/'
+  insdustrys:
+    get_industrys: '/api/user/industrys/'
+  permissions:
+    get_permissions: '/api/user/permissions/'
+  users:
+    get_self: '/api/user/users/self/'
+    put_info: '/api/user/users/{ID}/info/'
+  organization:
+    get_company: '/api/authorize/company/'
+    put_organization: '/api/user/organization/v3/user_org_info/5fc8b996aace70000cb1ac2b'
+  authorize:
+    post_company_token: '/api/authorize/v2/token/'
 qdes:
   folders:
     get_folders: '/api/qdes/v3/projects/folders/'
@@ -19,3 +31,4 @@ qdes:
     get_project_list: '/api/qdes/v3/projects/'
     get_project_folders: '/api/qdes/v3/projects/folders/'
     post_project_release: '/api/qdes/projects/{ID}/release/'
+

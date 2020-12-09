@@ -2,6 +2,8 @@ import requests
 import urllib3
 import logging
 from core.utils import log
+from core.bestcem import get_token
+from core.utils.read_yaml import CONFIG
 
 log.Logging()
 
@@ -21,10 +23,7 @@ def headers_new(a=None, b=None):
         }
 
 
-env = 'https://bvt.xm-test.bestcem.com'
-
-
-def request(method, url: str, json=None, params=None, token=None, files=None, verify=False, ID=None):
+def request(method, url: str, json=None, params=None, token=None, files=None, verify=False, ID=None, env=CONFIG['env']):
     if env:
         id_url = url.format(ID=ID)
         _url = f'{env}{id_url}'

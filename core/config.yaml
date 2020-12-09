@@ -1,0 +1,8 @@
+env:
+  'https://bvt.xm-test.bestcem.com'
+admin_user:
+  user_name: 'superadmin'
+  password: '1234567890'
+sub_user:
+  user_name: 'test01'
+  password: '1234567890'

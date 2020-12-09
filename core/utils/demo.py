@@ -16,7 +16,7 @@
 # # 	token_id = token
 # # 	url = utils.url.Api.getClubCharts
 # # 	data = request_data
-# # 	r = utils.config.post(url, data, token_id)
+# # 	r = utils.config.yaml.post(url, data, token_id)
 # # 	return r
 # #
 # # data = {'startDate': 123, 'clubId': {'id': '12345641512456453'}, 'stopDate': 234, 'filter': {'pace': {'start': 0, 'stop': 999}, 'gender': 'MALE', 'age': {'start': 0, 'stop': 999}, 'connectivity': {'start': 0, 'stop': 999}, 'score': {'start': 0, 'stop': 999}, 'yearlyRound': {'start': 0, 'stop': 999}}, 'clubChartTypes': ['AGE_AND_GENDER', 'COURSE_DISTRIBUTION', 'NUMBER_OF_PLAYER', 'NUMBER_OF_ROUND', 'PACE_OF_PLAY', 'ROUND_FREQUENCY', 'SKILL_LEVEL', 'TIME_OF_PLAY'], 'clubGatherPatterns': [{'_TYPE': 'ClubSinglePattern', 'clubId': {'id': 'd140a890-86ac-11e4-8c28-020000005b00'}}]}
@@ -220,7 +220,7 @@
 
 # while循环
 # import Config
-# round_num = Config.config.round_num
+# round_num = Config.config.yaml.round_num
 # # i=0
 # # while i < round_num:
 # # 	print(i)

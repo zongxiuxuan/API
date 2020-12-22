@@ -29,6 +29,5 @@ qdes:
     post_import_project: '/api/qdes/v3/projects/import/'
     put_project_title: '/api/qdes/v3/projects/{ID}/title/'
     get_project_list: '/api/qdes/v3/projects/'
-    get_project_folders: '/api/qdes/v3/projects/folders/'
     post_project_release: '/api/qdes/projects/{ID}/release/'
 

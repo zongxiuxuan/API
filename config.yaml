@@ -1,8 +1,13 @@
 env:
   'https://bvt.xm-test.bestcem.com'
+log_level:
+  INFO
 admin_user:
+  org_code: 'bvt'
   user_name: 'superadmin'
   password: '1234567890'
 sub_user:
+  org_code: 'bvt'
   user_name: 'test01'
   password: '1234567890'
+send_to: ['87859738@qq.com']

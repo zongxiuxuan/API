@@ -4,13 +4,17 @@ import yaml
 import jsonpath
 from core.utils import getDir
 
-APIS = yaml.safe_load(open(f'{getDir.coreDir}/bash_url.yaml'))
-CONFIG = yaml.safe_load(open(f'{getDir.coreDir}/config.yaml'))
+_APIS = yaml.safe_load(open(f'{getDir.coreDir}/bash_url.yaml'))
+_CONFIG = yaml.safe_load(open(f'{getDir.proDir}/config.yaml'))
 
 
 def get_api(expr):
-    return jsonpath.jsonpath(APIS, expr)[0]
+    return jsonpath.jsonpath(_APIS, expr)[0]
 
 
 def get_user(user_type='admin_user'):
-    return CONFIG[user_type]
+    return _CONFIG[user_type]
+
+
+def read_yaml(path):
+    return yaml.safe_load(open(path))

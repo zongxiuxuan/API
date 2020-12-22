@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-import unittest
-import Config
 import os
-import Common.getDir
+from core.utils import getDir
 import smtplib
 from email import encoders
 from email.mime.base import MIMEBase
@@ -14,21 +11,7 @@ import time
 配置测试数据集
 """
 
-proDir = Common.getDir.proDir
-
-
-# 建立test suit
-def WebTestSuite():
-    # set program
-    program = Config.config.program
-    suite = unittest.TestSuite()
-    # setting case dir
-    CaseDir = os.path.join(proDir, 'UI', 'GuangBen')
-    # search test case
-    d = unittest.defaultTestLoader.discover(start_dir=CaseDir, pattern='*.py')
-    for case in d:
-        suite.addTest(case)
-    return suite
+proDir = getDir.proDir
 
 
 # 使用email模块

@@ -2,8 +2,7 @@ import requests
 import urllib3
 import logging
 from core.utils import log
-from core.bestcem import get_token
-from core.utils.read_yaml import CONFIG
+from core.utils.read_yaml import _CONFIG
 
 log.Logging()
 
@@ -23,12 +22,13 @@ def headers_new(a=None, b=None):
         }
 
 
-def request(method, url: str, json=None, params=None, token=None, files=None, verify=False, ID=None, env=CONFIG['env']):
+def request(method, url: str, json=None, params=None, token=None, files=None, verify=False, ID=None, env=True):
     if env:
         id_url = url.format(ID=ID)
-        _url = f'{env}{id_url}'
+        _url = f'{_CONFIG["env"]}{id_url}'
     else:
         _url = url
+        print(_url)
     if not token:
         header = headers()
     else:
@@ -80,10 +80,10 @@ def request(method, url: str, json=None, params=None, token=None, files=None, ve
 
 
 # post
-def post(url, payload=None, token=None, params=None, file=None, ID=None):
+def post(url, payload=None, token=None, params=None, file=None, ID=None, env=True):
     """
     :param url: 请求url地址
-    :param json: 参数类型为json，传{}
+    :param payload: 参数类型为json，传{}
     :param token: 是否需要token认证
     :param param: 参数为表单,传{}
     :param file: 上传文件的key值和地址，传()
@@ -93,21 +93,21 @@ def post(url, payload=None, token=None, params=None, file=None, ID=None):
         for k, v in params.items():
             params[k] = (None, str(v))
         params[file[0]] = (file[1].split('/')[-1], open(file[1], 'rb'))
-        return request('POST', url=url, token=token, files=params, ID=ID)
+        return request('POST', url=url, token=token, files=params, ID=ID, env=env)
     else:
-        return request('POST', url=url, json=payload, params=params, token=token, ID=ID)
+        return request('POST', url=url, json=payload, params=params, token=token, ID=ID, env=env)
 
 
 # get
-def get(url, params=None, token=None, ID=None):
-    return request('GET', url=url, params=params, token=token, ID=ID)
+def get(url, params=None, token=None, ID=None, env=True):
+    return request('GET', url=url, params=params, token=token, ID=ID, env=env)
 
 
 # put
-def put(url, payload=None, token=None, ID=None):
-    return request('PUT', url=url, json=payload, token=token, ID=ID)
+def put(url, payload=None, token=None, ID=None, env=True):
+    return request('PUT', url=url, json=payload, token=token, ID=ID, env=env)
 
 
 # delete
-def delete(url, token=None, payload=None, ID=None):
-    return request('DELETE', url, json=payload, token=token, ID=ID)
+def delete(url, token=None, payload=None, ID=None, env=True):
+    return request('DELETE', url, json=payload, token=token, ID=ID, env=env)

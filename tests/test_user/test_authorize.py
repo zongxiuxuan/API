@@ -47,7 +47,7 @@ class TestAuthorize:
 
 
 if __name__ == '__main__':
-    pass
+    pytest.main('./tests/')
 # 执行用例
 # pytest -q -s tests/test_user/ --clean-alluredir --alluredir=report/report_001/
 # 生成报告

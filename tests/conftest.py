@@ -29,4 +29,5 @@ def set_headers():
         'password': user['password']
     }
     result = request.post(url, payload=payload, env=False)
-    return f"Bearer {result.json()['data']['token']}"
+    token = f"Bearer {result.json()['data']['token']}"
+    return token

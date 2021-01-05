@@ -18,3 +18,6 @@ def get_user(user_type='admin_user'):
 
 def read_yaml(path):
     return yaml.safe_load(open(path))
+
+if __name__ == '__main__':
+    print(read_yaml(f'{getDir.proDir}/data/account_login.yml'))

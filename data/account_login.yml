@@ -1,0 +1,9 @@
+success:
+  -
+    org_code: 'bvt'
+    username: 'superadmin'
+    password: 'zxx12345'
+  -
+   org_code: 'bvt'
+   username: 'zongxiuxuan001@163.com'
+   password: '1234567890'

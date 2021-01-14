@@ -54,6 +54,6 @@ class TestFloders:
 if __name__ == '__main__':
     pytest.main('./tests/')
 # 执行用例
-# pytest -q -s tests/test_user/ --clean-alluredir --alluredir=report/api_report/
+# pytest -q -s tests/test_user/ --clean-alluredir --alluredir=report/report_json/
 # 生成报告
-#  allure serve report/api_report/
+#  allure serve report/report_json/

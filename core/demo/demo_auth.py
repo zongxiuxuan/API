@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from core.bestcem import user
-from core.utils import read_yaml
+from core.utils import api_yaml
 import sys
 
 auth = user.Authorize()
 
 
 def get_auth(user_type='admin_user'):
-    params = read_yaml.get_user(user_type)
+    params = api_yaml.get_user(user_type)
     r = auth.post_company_token(user_name=params['user_name'], password=params['password'], org_code='')
     if r.status_code != '200' and 'token' not in r.json().keys():
         sys.exit(0)

@@ -3,7 +3,6 @@
 import pytest
 import allure
 from core.bestcem import folders, qdes
-from core.utils import method
 
 
 @allure.feature('项目列表')
@@ -54,7 +53,4 @@ class TestFloders:
 
 if __name__ == '__main__':
     pytest.main('./tests/')
-# 执行用例
-# pytest -q -s tests/test_user/ --clean-alluredir --alluredir=report/report_001/
-# 生成报告
-#  allure serve report/report_001/
+

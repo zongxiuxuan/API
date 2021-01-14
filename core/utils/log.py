@@ -1,9 +1,8 @@
-import os
 import sys
 import time
 import logging
-from core.utils.method import mkdir
-from core.utils import getDir
+from utils.method import mkdir
+from utils import getDir
 
 
 class Logging:

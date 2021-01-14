@@ -2,7 +2,7 @@ import requests
 import urllib3
 import logging
 from core.utils import log
-from core.utils.read_yaml import _CONFIG
+from core.utils.api_yaml import _CONFIG
 
 log.Logging()
 

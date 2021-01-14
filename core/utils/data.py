@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import core.utils.method as md
+import utils.method as md
 
 """
 时间类型数据

@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import random
-import json
 import arrow
 from faker import Factory
 import os
@@ -323,14 +322,6 @@ def strTimeProp(start='1971-01-01', end='2050-12-31', prop=random.random(), frmt
     return int(ptime)
 
 
-# 读取excel问卷
-def readExcelFile(filename='protest-原话记录.xlsx'):
-    lists = []
-    workbook = xlrd.open_workbook(filename=filename)
-    booksheet = workbook.sheet_by_index(0)
-    for i in range(booksheet.nrows):
-        lists.append("".join(booksheet.row_values(i)))
-    return lists
 
 
 if __name__ == '__main__':

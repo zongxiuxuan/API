@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from core.utils import request
-from core.utils.read_yaml import get_api
+from core.utils.api_yaml import get_api
 import sys
 
 

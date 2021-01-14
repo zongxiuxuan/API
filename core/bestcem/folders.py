@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from core.utils import request
-from core.utils.read_yaml import get_api
+from core.utils.api_yaml import get_api
 import sys
 
 
@@ -17,7 +17,3 @@ class Folders:
         return request.put(api, payload=payload, token=token)
 
 
-if __name__ == '__main__':
-    # s = Authorize()
-    # s.post_company_token(1,2,1)
-    User().get_self()

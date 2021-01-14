@@ -10,4 +10,10 @@ sub_user:
   org_code: 'bvt'
   user_name: 'test01'
   password: '1234567890'
-send_to: ['87859738@qq.com']
+email:
+  flag: 'true'
+  stmp_address: 'zongxiuxuan001@163.com'
+  stmp_password: 'zxx190825'
+  stmp_server: 'smtp.163.com'
+  stmp_port: '25'
+  send_to: ['zongxiuxuan001@163.com']

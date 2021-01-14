@@ -1,29 +1,24 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os
-from utils import getDir
 import smtplib
+from core.utils import api_yaml
 from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
+from utils import getDir
 import time
-"""
-配置测试数据集
-"""
-
-proDir = getDir.proDir
+import os
 
 
 # 使用email模块
-def sentMail(newFile, from_addr='rain_zxx@163.com', passwd='zongxiuxuan000', smtp_server='smtp.163.com'):
-    to_addr = Config.config.send_email_to
+def sentMail(newFile, to_addr, from_addr, passwd, smtp_server, smtp_port):
+    resultPath = os.path.join(getDir.proDir, "report/API_report/report_html/")
     msg = MIMEMultipart()
     # msg.attach(body)
     msg['From'] = from_addr
 
     # 多个邮件接收者需要修改to_addr
     msg['To'] = ','.join(to_addr)
-    msg['Subject'] = '18Birdies - Enterprise Auto Testing Report'
+    msg['Subject'] = 'API Auto Testing Report'
     msg['date'] = time.strftime('%a,%d %b %Y %H:%M:%S %z')
 
     part = MIMEBase('application', 'octet-stream')
@@ -31,22 +26,19 @@ def sentMail(newFile, from_addr='rain_zxx@163.com', passwd='zongxiuxuan000', smt
     encoders.encode_base64(part)
     part.add_header('Content-Disposition', 'attachment; filename="test_report.html"')
     msg.attach(part)
-    server = smtplib.SMTP(smtp_server, 25)
+    server = smtplib.SMTP(smtp_server, smtp_port)
     server.set_debuglevel(1)
     server.login(from_addr, passwd)
-
     # for发给多个接收者
     # for to_addr in addrs:
     server.sendmail(from_addr, to_addr, msg.as_string())
-
     server.quit()
     print(u'Mail sent successfully')
 
 
-def sendReport():
-    flag = Config.config.send_email
+def sendReport_newfile(flag):
     if flag == 'Y':
-        resultPath = os.path.join(proDir, "Output/API_report/report_html/")
+        resultPath = os.path.join(getDir.proDir, "report/API_report/report_html/")
         lists = os.listdir(resultPath)
         # 找到最新的测试报告
         lists.sort(key=lambda fn: os.path.getmtime(resultPath + fn) if not os.path.isdir(resultPath + fn) else 0)

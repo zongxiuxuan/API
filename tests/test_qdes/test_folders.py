@@ -3,7 +3,6 @@
 import pytest
 import allure
 from core.bestcem import folders, qdes
-from core.utils import method
 
 
 @allure.feature('folders')
@@ -37,8 +36,6 @@ class TestFloders:
             add = [{"name": par_name, "children": [{"name": child_name}], "projectCount": 0}]
             result = self.folder.put_folders(add, set_headers)
             assert result.json()['code'] != 0
-
-
 
     @allure.title('清除所有folders')
     def test_clear_folders(self, set_headers):

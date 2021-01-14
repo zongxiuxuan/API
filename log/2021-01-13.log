@@ -1,0 +1,1054 @@
+[INFO - 2021-01-13 17:34:48,803 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:48,803 - request.py ] : [      api      ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:48,803 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:48,803 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:48,803 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin', 'password': '1234567890'}
+[INFO - 2021-01-13 17:34:48,803 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:48,803 - request.py ] : [   time total  ] : 0.125964 s
+[INFO - 2021-01-13 17:34:48,803 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1Mzc2ODksImlhdCI6MTYxMDUzMDQ4OSwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDg5LCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjOGI5OTZjNjdkYWVkZDI1ZGFjZjAzIiwidW5hbWUiOiJuYW1lMSIsImF2YXRhciI6Imh0dHA6Ly90aGlyZHd4LnFsb2dvLmNuL21tb3Blbi9RM2F1SGd6d3pNN0ZpY0VuUmQ1QWlja2VYQ3FEdWNNVTV1Z3BGNE1mR1R0NG5ZQnVmY3pNaWNIRzhTUDdqZHhCTmJkV3dXc1ZtMkhoTkpoZHRJNkR2ZHBRd1BtV1hta3B5NGVkaWJXeTFBN3N1Z1kvMTMyIiwic3VwZXIiOjF9.Et364a1oh0BOtI23omTRAZfRLC1q5OUT0dNgzkXxzAM', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjI0ODksImlhdCI6MTYxMDUzMDQ4OSwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDg5LCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmYzhiOTk2YzY3ZGFlZGQyNWRhY2YwMyJ9.4XfhiioTC8jqwk91GudHrM4nplV2q5fz6_eHlAXXolM', 'growingio': {'loginUserId': '5fc8b996c67daedd25dacf03test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 17:34:48,803 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:48,888 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:48,888 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:48,888 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:48,888 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:48,888 - request.py ] : [  request data ] : {'foldersList': [{'name': 'test1', 'children': [{'name': 'ctest1'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:48,888 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:48,888 - request.py ] : [   time total  ] : 0.07574 s
+[INFO - 2021-01-13 17:34:48,888 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:48,888 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:48,972 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:48,972 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:48,972 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:48,972 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:48,972 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:48,972 - request.py ] : [   time total  ] : 0.087865 s
+[INFO - 2021-01-13 17:34:48,972 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffebeb9aace70000b1e62e0', 'name': 'test1', 'children': [{'id': '5ffebeb9aace70000b1e62e1', 'name': 'ctest1', 'children': []}]}]}}}
+[INFO - 2021-01-13 17:34:48,972 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,052 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,052 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,052 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,052 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:49,052 - request.py ] : [  request data ] : {'foldersList': [{'name': '父文件夹', 'children': [{'name': '子文件夹'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:49,052 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,052 - request.py ] : [   time total  ] : 0.0721 s
+[INFO - 2021-01-13 17:34:49,052 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:49,052 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,152 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,152 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,152 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,152 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:49,152 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,152 - request.py ] : [   time total  ] : 0.095193 s
+[INFO - 2021-01-13 17:34:49,152 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffebeb9aace70000b1e62e4', 'name': '父文件夹', 'children': [{'id': '5ffebeb9aace70000b1e62e5', 'name': '子文件夹', 'children': []}]}]}}}
+[INFO - 2021-01-13 17:34:49,152 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,247 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,247 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,247 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,247 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:49,247 - request.py ] : [  request data ] : {'foldersList': [{'name': 'long长字符', 'children': [{'name': 'ctest3'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:49,247 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,247 - request.py ] : [   time total  ] : 0.087286 s
+[INFO - 2021-01-13 17:34:49,247 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:49,247 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,346 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,346 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,346 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,346 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:49,346 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,346 - request.py ] : [   time total  ] : 0.095945 s
+[INFO - 2021-01-13 17:34:49,346 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffebebaaace7000091e6a26', 'name': 'long长字符', 'children': [{'id': '5ffebebaaace7000091e6a27', 'name': 'ctest3', 'children': []}]}]}}}
+[INFO - 2021-01-13 17:34:49,346 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,443 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,446 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,446 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,446 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:49,446 - request.py ] : [  request data ] : {'foldersList': [{'name': '', 'children': [{'name': ''}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:49,446 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,446 - request.py ] : [   time total  ] : 0.091065 s
+[INFO - 2021-01-13 17:34:49,446 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:49,446 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 17:34:49,446 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_folders.py", line 39, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 17:34:49,632 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,632 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,632 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,632 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:49,632 - request.py ] : [  request data ] : {'foldersList': [{'name': 'test', 'children': [{'name': ''}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:49,632 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,632 - request.py ] : [   time total  ] : 0.098727 s
+[INFO - 2021-01-13 17:34:49,632 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:49,632 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 17:34:49,632 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_folders.py", line 39, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 17:34:49,713 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,713 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,713 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,713 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:49,713 - request.py ] : [  request data ] : {'foldersList': [{'name': '', 'children': [{'name': 'ctest3'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:49,713 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,713 - request.py ] : [   time total  ] : 0.067792 s
+[INFO - 2021-01-13 17:34:49,713 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:49,713 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 17:34:49,713 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_folders.py", line 39, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 17:34:49,784 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,784 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,784 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,784 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:49,784 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,784 - request.py ] : [   time total  ] : 0.063788 s
+[INFO - 2021-01-13 17:34:49,784 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffebebaaace7000091e6a2e', 'name': '', 'children': [{'id': '5ffebebaaace7000091e6a2f', 'name': 'ctest3', 'children': []}]}]}}}
+[INFO - 2021-01-13 17:34:49,784 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,862 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,862 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,862 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,862 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:49,862 - request.py ] : [  request data ] : {'foldersList': []}
+[INFO - 2021-01-13 17:34:49,862 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,862 - request.py ] : [   time total  ] : 0.077044 s
+[INFO - 2021-01-13 17:34:49,862 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:49,862 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,942 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:49,942 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,942 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:49,942 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:49,942 - request.py ] : [  request data ] : {'foldersList': [{'name': 'test1', 'children': [{'name': 'ctest1'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:49,942 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:49,942 - request.py ] : [   time total  ] : 0.070922 s
+[INFO - 2021-01-13 17:34:49,942 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:49,942 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,162 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,162 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:50,162 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:50,162 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:50,162 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:50,162 - request.py ] : [   time total  ] : 0.217924 s
+[INFO - 2021-01-13 17:34:50,162 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffebebaaace7000091e6a32', 'name': 'test1', 'children': [{'id': '5ffebebaaace7000091e6a33', 'name': 'ctest1', 'children': []}]}]}}}
+[INFO - 2021-01-13 17:34:50,162 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,343 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,343 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:50,343 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:50,343 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:50,343 - request.py ] : [  request data ] : {'foldersList': [{'name': '父文件夹', 'children': [{'name': '子文件夹'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:50,343 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:50,343 - request.py ] : [   time total  ] : 0.17297 s
+[INFO - 2021-01-13 17:34:50,343 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:50,343 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,503 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,503 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:50,503 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:50,503 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:50,503 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:50,503 - request.py ] : [   time total  ] : 0.157462 s
+[INFO - 2021-01-13 17:34:50,503 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffebebbaace7000091e6a36', 'name': '父文件夹', 'children': [{'id': '5ffebebbaace7000091e6a37', 'name': '子文件夹', 'children': []}]}]}}}
+[INFO - 2021-01-13 17:34:50,503 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,742 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,742 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:50,743 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:50,743 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:50,743 - request.py ] : [  request data ] : {'foldersList': [{'name': 'long长字符', 'children': [{'name': 'ctest3'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:50,743 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:50,743 - request.py ] : [   time total  ] : 0.228914 s
+[INFO - 2021-01-13 17:34:50,743 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:50,743 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,997 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:50,997 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:50,997 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:51,002 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:51,002 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:51,002 - request.py ] : [   time total  ] : 0.25585 s
+[INFO - 2021-01-13 17:34:51,002 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffebebbaace7000091e6a3a', 'name': 'long长字符', 'children': [{'id': '5ffebebbaace7000091e6a3b', 'name': 'ctest3', 'children': []}]}]}}}
+[INFO - 2021-01-13 17:34:51,002 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:51,172 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:51,172 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:51,172 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:51,172 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:51,172 - request.py ] : [  request data ] : {'foldersList': [{'name': '', 'children': [{'name': ''}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:51,172 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:51,172 - request.py ] : [   time total  ] : 0.163047 s
+[INFO - 2021-01-13 17:34:51,172 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:51,172 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 17:34:51,172 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_projects.py", line 39, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 17:34:51,393 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:51,393 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:51,393 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:51,393 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:51,393 - request.py ] : [  request data ] : {'foldersList': [{'name': 'test', 'children': [{'name': ''}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:51,393 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:51,393 - request.py ] : [   time total  ] : 0.204386 s
+[INFO - 2021-01-13 17:34:51,393 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:51,393 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 17:34:51,393 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_projects.py", line 39, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 17:34:51,593 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:51,593 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:51,593 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:51,593 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:51,593 - request.py ] : [  request data ] : {'foldersList': [{'name': '', 'children': [{'name': 'ctest3'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 17:34:51,593 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:51,593 - request.py ] : [   time total  ] : 0.188412 s
+[INFO - 2021-01-13 17:34:51,593 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:51,593 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 17:34:51,593 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_projects.py", line 39, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 17:34:51,832 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:51,832 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:51,832 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:51,832 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:51,832 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:51,832 - request.py ] : [   time total  ] : 0.22219 s
+[INFO - 2021-01-13 17:34:51,832 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffebebcaace7000091e6a3e', 'name': '', 'children': [{'id': '5ffebebcaace7000091e6a3f', 'name': 'ctest3', 'children': []}]}]}}}
+[INFO - 2021-01-13 17:34:51,832 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,042 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,042 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:52,042 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 17:34:52,042 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 17:34:52,042 - request.py ] : [  request data ] : {'foldersList': []}
+[INFO - 2021-01-13 17:34:52,042 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,042 - request.py ] : [   time total  ] : 0.209877 s
+[INFO - 2021-01-13 17:34:52,042 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 17:34:52,042 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,143 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,143 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:52,143 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:52,143 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:52,143 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin', 'password': 'zxx12345'}
+[INFO - 2021-01-13 17:34:52,143 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,143 - request.py ] : [   time total  ] : 0.096146 s
+[INFO - 2021-01-13 17:34:52,143 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1Mzc2OTIsImlhdCI6MTYxMDUzMDQ5MiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDkyLCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjOGI5OTZjNjdkYWVkZDI1ZGFjZjAzIiwidW5hbWUiOiJuYW1lMSIsImF2YXRhciI6Imh0dHA6Ly90aGlyZHd4LnFsb2dvLmNuL21tb3Blbi9RM2F1SGd6d3pNN0ZpY0VuUmQ1QWlja2VYQ3FEdWNNVTV1Z3BGNE1mR1R0NG5ZQnVmY3pNaWNIRzhTUDdqZHhCTmJkV3dXc1ZtMkhoTkpoZHRJNkR2ZHBRd1BtV1hta3B5NGVkaWJXeTFBN3N1Z1kvMTMyIiwic3VwZXIiOjF9.uiiZi9MAHtTCtJeOpWe-llrCmjmjRTOcbwv57EgBiVo', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjI0OTIsImlhdCI6MTYxMDUzMDQ5MiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDkyLCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmYzhiOTk2YzY3ZGFlZGQyNWRhY2YwMyJ9.FqU6W0mwHjh5fnF5bh0EaGetc-jMpT4FQsa7ZQBRe0U', 'growingio': {'loginUserId': '5fc8b996c67daedd25dacf03test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 17:34:52,143 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,233 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,233 - request.py ] : [      api      ] : /api/authorize/company/
+[INFO - 2021-01-13 17:34:52,233 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/company/
+[INFO - 2021-01-13 17:34:52,233 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:52,233 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,233 - request.py ] : [   time total  ] : 0.084722 s
+[INFO - 2021-01-13 17:34:52,233 - request.py ] : [ response json ] : {'code': 0, 'data': {'code': 'bvt', 'name': 'bvt', 'status': 0, 'expiryDT': '2099/12/31 00:00:00', 'free_expiryDT': '2021/01/02 00:00:00', 'skin': {'status': True, 'login_bg_img': {}, 'login_color': '#2672FF', 'logo': {}, 'name': '', 'title': '', 'hideLoginChanger': False}, 'publicKey': '', 'edition': 1, 'is_complete': True, 'email': '', 'org_name': 'bvt', 'contact': '15901005428', 'footer_edit': False, 'industry': {'code': 5, 'name': '地产', 'id': '5dc8ff73c525ed748396fee4'}, 'mmodules': ['USER', 'ANALYSIS_WORKSHEET', 'ANALYSIS_DASHBOARD', 'PROJECT', 'ACTION_ALERT', 'ACTION_TICKET', 'ANALYSIS_TXTANLS', 'MEMBER', 'LIB'], 'is_xm': True, 'createdDT': '2020/12/03 18:10:31'}}
+[INFO - 2021-01-13 17:34:52,233 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,312 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,312 - request.py ] : [      api      ] : /api/user/users/self/
+[INFO - 2021-01-13 17:34:52,312 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/user/users/self/
+[INFO - 2021-01-13 17:34:52,312 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:52,312 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,312 - request.py ] : [   time total  ] : 0.076239 s
+[INFO - 2021-01-13 17:34:52,312 - request.py ] : [ response json ] : {'code': 0, 'data': {'id': '5fc8b996c67daedd25dacf03', 'orgID': '5fc8b996aace70000cb1ac2b', 'userName': 'superadmin', 'name': 'name1', 'avatar': 'http://thirdwx.qlogo.cn/mmopen/Q3auHgzwzM7FicEnRd5AickeXCqDucMU5ugpF4MfGTt4nYBufczMicHG8SP7jdxBNbdWwWsVm2HhNJhdtI6DvdpQwPmWXmkpy4edibWy1A7sugY/132', 'email': 'zongxiuxuan001@163.com', 'mobile': '15467676787', 'status': 1, 'roleList': ['5fc8b996c67daedd25daceef'], 'content': '', 'edition': 1, 'show_introduction': True, 'wx_unionid': '', 'wx_openid': '', 'wx_offi_openid': '', 'wx_nickname': '', 'is_accept': True, 'last_login_time': '2021/01/13 17:34:52', 'register_ip': '116.232.49.149', 'is_inner_user': True, 'createdID': None, 'createdDT': '2020/12/03 18:10:30', 'updatedID': None, 'updatedDT': '2021/01/13 17:34:52', 'record_flag': 1, 'super': True, 'has_password': True, 'groups': []}}
+[INFO - 2021-01-13 17:34:52,312 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,403 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,403 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:52,403 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:52,403 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:52,403 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'zongxiuxuan001@163.com', 'password': '1234567890'}
+[INFO - 2021-01-13 17:34:52,403 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,403 - request.py ] : [   time total  ] : 0.080724 s
+[INFO - 2021-01-13 17:34:52,403 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1Mzc2OTMsImlhdCI6MTYxMDUzMDQ5MywiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDkzLCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjOGI5OTZjNjdkYWVkZDI1ZGFjZjAzIiwidW5hbWUiOiJuYW1lMSIsImF2YXRhciI6Imh0dHA6Ly90aGlyZHd4LnFsb2dvLmNuL21tb3Blbi9RM2F1SGd6d3pNN0ZpY0VuUmQ1QWlja2VYQ3FEdWNNVTV1Z3BGNE1mR1R0NG5ZQnVmY3pNaWNIRzhTUDdqZHhCTmJkV3dXc1ZtMkhoTkpoZHRJNkR2ZHBRd1BtV1hta3B5NGVkaWJXeTFBN3N1Z1kvMTMyIiwic3VwZXIiOjF9.y44zsbySc3WQeRWnyDvO8k_AkvMVtYZIX_7l8LdGpj0', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjI0OTMsImlhdCI6MTYxMDUzMDQ5MywiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDkzLCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmYzhiOTk2YzY3ZGFlZGQyNWRhY2YwMyJ9.api1G2i65mN4G0RlmTlkPxUAWARh6a2HQb9laPioXDw', 'growingio': {'loginUserId': '5fc8b996c67daedd25dacf03test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 17:34:52,403 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,497 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,497 - request.py ] : [      api      ] : /api/authorize/company/
+[INFO - 2021-01-13 17:34:52,497 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/company/
+[INFO - 2021-01-13 17:34:52,497 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:52,497 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,497 - request.py ] : [   time total  ] : 0.09197 s
+[INFO - 2021-01-13 17:34:52,497 - request.py ] : [ response json ] : {'code': 0, 'data': {'code': 'bvt', 'name': 'bvt', 'status': 0, 'expiryDT': '2099/12/31 00:00:00', 'free_expiryDT': '2021/01/02 00:00:00', 'skin': {'status': True, 'login_bg_img': {}, 'login_color': '#2672FF', 'logo': {}, 'name': '', 'title': '', 'hideLoginChanger': False}, 'publicKey': '', 'edition': 1, 'is_complete': True, 'email': '', 'org_name': 'bvt', 'contact': '15901005428', 'footer_edit': False, 'industry': {'code': 5, 'name': '地产', 'id': '5dc8ff73c525ed748396fee4'}, 'mmodules': ['USER', 'ANALYSIS_WORKSHEET', 'ANALYSIS_DASHBOARD', 'PROJECT', 'ACTION_ALERT', 'ACTION_TICKET', 'ANALYSIS_TXTANLS', 'MEMBER', 'LIB'], 'is_xm': True, 'createdDT': '2020/12/03 18:10:31'}}
+[INFO - 2021-01-13 17:34:52,497 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,573 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,573 - request.py ] : [      api      ] : /api/user/users/self/
+[INFO - 2021-01-13 17:34:52,573 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/user/users/self/
+[INFO - 2021-01-13 17:34:52,573 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:52,573 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,573 - request.py ] : [   time total  ] : 0.072265 s
+[INFO - 2021-01-13 17:34:52,573 - request.py ] : [ response json ] : {'code': 0, 'data': {'id': '5fc8b996c67daedd25dacf03', 'orgID': '5fc8b996aace70000cb1ac2b', 'userName': 'superadmin', 'name': 'name1', 'avatar': 'http://thirdwx.qlogo.cn/mmopen/Q3auHgzwzM7FicEnRd5AickeXCqDucMU5ugpF4MfGTt4nYBufczMicHG8SP7jdxBNbdWwWsVm2HhNJhdtI6DvdpQwPmWXmkpy4edibWy1A7sugY/132', 'email': 'zongxiuxuan001@163.com', 'mobile': '15467676787', 'status': 1, 'roleList': ['5fc8b996c67daedd25daceef'], 'content': '', 'edition': 1, 'show_introduction': True, 'wx_unionid': '', 'wx_openid': '', 'wx_offi_openid': '', 'wx_nickname': '', 'is_accept': True, 'last_login_time': '2021/01/13 17:34:53', 'register_ip': '116.232.49.149', 'is_inner_user': True, 'createdID': None, 'createdDT': '2020/12/03 18:10:30', 'updatedID': None, 'updatedDT': '2021/01/13 17:34:53', 'record_flag': 1, 'super': True, 'has_password': True, 'groups': []}}
+[INFO - 2021-01-13 17:34:52,573 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,673 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,673 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:52,673 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:52,673 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:52,673 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': '17839236545', 'password': '1234567890'}
+[INFO - 2021-01-13 17:34:52,673 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,673 - request.py ] : [   time total  ] : 0.083293 s
+[INFO - 2021-01-13 17:34:52,673 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1Mzc2OTMsImlhdCI6MTYxMDUzMDQ5MywiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDkzLCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjZjE4M2JhYWNlNzAwMDBiYTQ2MzgyIiwidW5hbWUiOiJ0ZXN0MDIiLCJhdmF0YXIiOiIifQ.gawh7T8XmFMh2ljKPwkYCK7CZ_OsiYu6Q1BUa6_tNYg', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjI0OTMsImlhdCI6MTYxMDUzMDQ5MywiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDkzLCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmY2YxODNiYWFjZTcwMDAwYmE0NjM4MiJ9.KIlLkPvaHemRlQQYPtfyUTr-zak1y4P1qiaKAmVV9Fw', 'growingio': {'loginUserId': '5fcf183baace70000ba46382test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 17:34:52,673 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,743 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,743 - request.py ] : [      api      ] : /api/authorize/company/
+[INFO - 2021-01-13 17:34:52,743 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/company/
+[INFO - 2021-01-13 17:34:52,743 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:52,743 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,743 - request.py ] : [   time total  ] : 0.069258 s
+[INFO - 2021-01-13 17:34:52,743 - request.py ] : [ response json ] : {'code': 0, 'data': {'code': 'bvt', 'name': 'bvt', 'status': 0, 'expiryDT': '2099/12/31 00:00:00', 'free_expiryDT': '2021/01/02 00:00:00', 'skin': {'status': True, 'login_bg_img': {}, 'login_color': '#2672FF', 'logo': {}, 'name': '', 'title': '', 'hideLoginChanger': False}, 'publicKey': '', 'edition': 1, 'is_complete': True, 'email': '', 'org_name': 'bvt', 'contact': '15901005428', 'footer_edit': False, 'industry': {'code': 5, 'name': '地产', 'id': '5dc8ff73c525ed748396fee4'}, 'mmodules': ['USER', 'ANALYSIS_WORKSHEET', 'ANALYSIS_DASHBOARD', 'PROJECT', 'ACTION_ALERT', 'ACTION_TICKET', 'ANALYSIS_TXTANLS', 'MEMBER', 'LIB'], 'is_xm': True, 'createdDT': '2020/12/03 18:10:31'}}
+[INFO - 2021-01-13 17:34:52,743 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,804 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,804 - request.py ] : [      api      ] : /api/user/users/self/
+[INFO - 2021-01-13 17:34:52,804 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/user/users/self/
+[INFO - 2021-01-13 17:34:52,804 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:52,804 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,804 - request.py ] : [   time total  ] : 0.061882 s
+[INFO - 2021-01-13 17:34:52,804 - request.py ] : [ response json ] : {'code': 0, 'data': {'id': '5fcf183baace70000ba46382', 'orgID': '5fc8b996aace70000cb1ac2b', 'userName': 'test02', 'name': 'test02', 'avatar': '', 'email': 'zongxiuxuan002@163.com', 'mobile': '17839236545', 'status': 1, 'roleList': ['5fcf9769aace70000bb36f1c'], 'content': '', 'edition': 1, 'show_introduction': True, 'wx_unionid': '', 'wx_openid': '', 'wx_offi_openid': '', 'wx_nickname': '', 'is_accept': False, 'last_login_time': '2021/01/13 17:34:53', 'register_ip': '', 'is_inner_user': True, 'createdID': None, 'createdDT': '2020/12/08 14:07:55', 'updatedID': None, 'updatedDT': '2021/01/13 17:34:53', 'record_flag': 1, 'super': False, 'has_password': True, 'groups': [{'id': '5fc8b997f9f4f6001bb2aead', 'orgID': '5fc8b996aace70000cb1ac2b', 'code': 'AUTO_12222222', 'seq': 5, 'title': '测试2店', 'groupType': 1, 'groupLevelID': '5fcf4715aace70000922c682', 'status': 0, 'contact': '', 'email': '', 'adminID': None, 'adminName': '', 'createdID': None, 'createdDT': '2020/12/03 18:10:31', 'updatedID': None, 'updatedDT': '2020/12/03 18:10:31', 'record_flag': 1}]}}
+[INFO - 2021-01-13 17:34:52,804 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,903 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,903 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:52,903 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:52,903 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:52,903 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': None, 'user_name': '17839236545', 'password': '1234567890'}
+[INFO - 2021-01-13 17:34:52,903 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,903 - request.py ] : [   time total  ] : 0.088416 s
+[INFO - 2021-01-13 17:34:52,903 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1Mzc2OTMsImlhdCI6MTYxMDUzMDQ5MywiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDkzLCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjZjE4M2JhYWNlNzAwMDBiYTQ2MzgyIiwidW5hbWUiOiJ0ZXN0MDIiLCJhdmF0YXIiOiIifQ.gawh7T8XmFMh2ljKPwkYCK7CZ_OsiYu6Q1BUa6_tNYg', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjI0OTMsImlhdCI6MTYxMDUzMDQ5MywiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTMwNDkzLCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmY2YxODNiYWFjZTcwMDAwYmE0NjM4MiJ9.KIlLkPvaHemRlQQYPtfyUTr-zak1y4P1qiaKAmVV9Fw', 'growingio': {'loginUserId': '5fcf183baace70000ba46382test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 17:34:52,903 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,992 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:52,992 - request.py ] : [      api      ] : /api/authorize/company/
+[INFO - 2021-01-13 17:34:52,992 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/company/
+[INFO - 2021-01-13 17:34:52,992 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:52,992 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:52,992 - request.py ] : [   time total  ] : 0.084098 s
+[INFO - 2021-01-13 17:34:52,992 - request.py ] : [ response json ] : {'code': 0, 'data': {'code': 'bvt', 'name': 'bvt', 'status': 0, 'expiryDT': '2099/12/31 00:00:00', 'free_expiryDT': '2021/01/02 00:00:00', 'skin': {'status': True, 'login_bg_img': {}, 'login_color': '#2672FF', 'logo': {}, 'name': '', 'title': '', 'hideLoginChanger': False}, 'publicKey': '', 'edition': 1, 'is_complete': True, 'email': '', 'org_name': 'bvt', 'contact': '15901005428', 'footer_edit': False, 'industry': {'code': 5, 'name': '地产', 'id': '5dc8ff73c525ed748396fee4'}, 'mmodules': ['USER', 'ANALYSIS_WORKSHEET', 'ANALYSIS_DASHBOARD', 'PROJECT', 'ACTION_ALERT', 'ACTION_TICKET', 'ANALYSIS_TXTANLS', 'MEMBER', 'LIB'], 'is_xm': True, 'createdDT': '2020/12/03 18:10:31'}}
+[INFO - 2021-01-13 17:34:52,992 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,084 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,084 - request.py ] : [      api      ] : /api/user/users/self/
+[INFO - 2021-01-13 17:34:53,084 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/user/users/self/
+[INFO - 2021-01-13 17:34:53,084 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 17:34:53,084 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:53,084 - request.py ] : [   time total  ] : 0.086284 s
+[INFO - 2021-01-13 17:34:53,084 - request.py ] : [ response json ] : {'code': 0, 'data': {'id': '5fcf183baace70000ba46382', 'orgID': '5fc8b996aace70000cb1ac2b', 'userName': 'test02', 'name': 'test02', 'avatar': '', 'email': 'zongxiuxuan002@163.com', 'mobile': '17839236545', 'status': 1, 'roleList': ['5fcf9769aace70000bb36f1c'], 'content': '', 'edition': 1, 'show_introduction': True, 'wx_unionid': '', 'wx_openid': '', 'wx_offi_openid': '', 'wx_nickname': '', 'is_accept': False, 'last_login_time': '2021/01/13 17:34:53', 'register_ip': '', 'is_inner_user': True, 'createdID': None, 'createdDT': '2020/12/08 14:07:55', 'updatedID': None, 'updatedDT': '2021/01/13 17:34:53', 'record_flag': 1, 'super': False, 'has_password': True, 'groups': [{'id': '5fc8b997f9f4f6001bb2aead', 'orgID': '5fc8b996aace70000cb1ac2b', 'code': 'AUTO_12222222', 'seq': 5, 'title': '测试2店', 'groupType': 1, 'groupLevelID': '5fcf4715aace70000922c682', 'status': 0, 'contact': '', 'email': '', 'adminID': None, 'adminName': '', 'createdID': None, 'createdDT': '2020/12/03 18:10:31', 'updatedID': None, 'updatedDT': '2020/12/03 18:10:31', 'record_flag': 1}]}}
+[INFO - 2021-01-13 17:34:53,084 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,173 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,173 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,173 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,173 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:53,173 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin', 'password': '12345678901'}
+[INFO - 2021-01-13 17:34:53,173 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:53,173 - request.py ] : [   time total  ] : 0.087274 s
+[INFO - 2021-01-13 17:34:53,173 - request.py ] : [ response json ] : {'code': 103, 'msg': 'user_name or password not true.'}
+[INFO - 2021-01-13 17:34:53,173 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,282 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,282 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,282 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,282 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:53,282 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin1', 'password': '1234567890'}
+[INFO - 2021-01-13 17:34:53,282 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:53,282 - request.py ] : [   time total  ] : 0.101317 s
+[INFO - 2021-01-13 17:34:53,282 - request.py ] : [ response json ] : {'code': 105, 'msg': 'user_name or password not true.'}
+[INFO - 2021-01-13 17:34:53,282 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,383 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,383 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,383 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,383 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:53,383 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': '', 'password': '1234567890'}
+[INFO - 2021-01-13 17:34:53,383 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:53,383 - request.py ] : [   time total  ] : 0.096099 s
+[INFO - 2021-01-13 17:34:53,383 - request.py ] : [ response json ] : {'code': 402, 'msg': 'user_name is empty.'}
+[INFO - 2021-01-13 17:34:53,383 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,473 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,473 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,473 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,473 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:53,473 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin', 'password': ''}
+[INFO - 2021-01-13 17:34:53,473 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:53,473 - request.py ] : [   time total  ] : 0.078223 s
+[INFO - 2021-01-13 17:34:53,473 - request.py ] : [ response json ] : {'code': 403, 'msg': 'password is empty.'}
+[INFO - 2021-01-13 17:34:53,473 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,573 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,573 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,573 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,573 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:53,573 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt_test', 'user_name': 'superadmin', 'password': '1234567890'}
+[INFO - 2021-01-13 17:34:53,573 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:53,573 - request.py ] : [   time total  ] : 0.089869 s
+[INFO - 2021-01-13 17:34:53,573 - request.py ] : [ response json ] : {'code': 101, 'msg': 'user_name or password not true.'}
+[INFO - 2021-01-13 17:34:53,573 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,662 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 17:34:53,662 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,662 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 17:34:53,662 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 17:34:53,662 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': '', 'user_name': '', 'password': ''}
+[INFO - 2021-01-13 17:34:53,662 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 17:34:53,662 - request.py ] : [   time total  ] : 0.076907 s
+[INFO - 2021-01-13 17:34:53,662 - request.py ] : [ response json ] : {'code': 402, 'msg': 'user_name is empty.'}
+[INFO - 2021-01-13 17:34:53,662 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,071 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,071 - request.py ] : [      api      ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:49,071 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:49,071 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:49,071 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin', 'password': '1234567890'}
+[INFO - 2021-01-13 19:33:49,071 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,071 - request.py ] : [   time total  ] : 0.13095 s
+[INFO - 2021-01-13 19:33:49,071 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1NDQ4MjksImlhdCI6MTYxMDUzNzYyOSwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjI5LCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjOGI5OTZjNjdkYWVkZDI1ZGFjZjAzIiwidW5hbWUiOiJuYW1lMSIsImF2YXRhciI6Imh0dHA6Ly90aGlyZHd4LnFsb2dvLmNuL21tb3Blbi9RM2F1SGd6d3pNN0ZpY0VuUmQ1QWlja2VYQ3FEdWNNVTV1Z3BGNE1mR1R0NG5ZQnVmY3pNaWNIRzhTUDdqZHhCTmJkV3dXc1ZtMkhoTkpoZHRJNkR2ZHBRd1BtV1hta3B5NGVkaWJXeTFBN3N1Z1kvMTMyIiwic3VwZXIiOjF9.tUaYajYEPbsHEnGSGIPjSZHU87b4TXa3oekoISHeJUE', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjk2MjksImlhdCI6MTYxMDUzNzYyOSwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjI5LCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmYzhiOTk2YzY3ZGFlZGQyNWRhY2YwMyJ9.8EVDUjnlaipNsjzTepC0K44rhuTI1_EVFKWU8xL0w5I', 'growingio': {'loginUserId': '5fc8b996c67daedd25dacf03test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 19:33:49,071 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,161 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,161 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,161 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,161 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:49,161 - request.py ] : [  request data ] : {'foldersList': [{'name': 'test1', 'children': [{'name': 'ctest1'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:49,161 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,161 - request.py ] : [   time total  ] : 0.086581 s
+[INFO - 2021-01-13 19:33:49,161 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:49,161 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,230 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,230 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,230 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,230 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:49,230 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,230 - request.py ] : [   time total  ] : 0.064624 s
+[INFO - 2021-01-13 19:33:49,230 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffeda9daace70000b86b83a', 'name': 'test1', 'children': [{'id': '5ffeda9daace70000b86b83b', 'name': 'ctest1', 'children': []}]}]}}}
+[INFO - 2021-01-13 19:33:49,230 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,331 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,331 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,331 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,331 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:49,331 - request.py ] : [  request data ] : {'foldersList': [{'name': '父文件夹', 'children': [{'name': '子文件夹'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:49,331 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,331 - request.py ] : [   time total  ] : 0.095997 s
+[INFO - 2021-01-13 19:33:49,331 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:49,331 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,422 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,422 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,422 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,422 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:49,422 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,422 - request.py ] : [   time total  ] : 0.083746 s
+[INFO - 2021-01-13 19:33:49,422 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffeda9eaace70000b86b83e', 'name': '父文件夹', 'children': [{'id': '5ffeda9eaace70000b86b83f', 'name': '子文件夹', 'children': []}]}]}}}
+[INFO - 2021-01-13 19:33:49,422 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,511 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,511 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,511 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,511 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:49,511 - request.py ] : [  request data ] : {'foldersList': [{'name': 'long长字符', 'children': [{'name': 'ctest3'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:49,511 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,511 - request.py ] : [   time total  ] : 0.087305 s
+[INFO - 2021-01-13 19:33:49,511 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:49,511 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,611 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,611 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,611 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,611 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:49,611 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,611 - request.py ] : [   time total  ] : 0.096314 s
+[INFO - 2021-01-13 19:33:49,611 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffeda9eaace70000986b6e9', 'name': 'long长字符', 'children': [{'id': '5ffeda9eaace70000986b6ea', 'name': 'ctest3', 'children': []}]}]}}}
+[INFO - 2021-01-13 19:33:49,611 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,691 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,691 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,691 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,691 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:49,691 - request.py ] : [  request data ] : {'foldersList': [{'name': '', 'children': [{'name': ''}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:49,691 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,691 - request.py ] : [   time total  ] : 0.065851 s
+[INFO - 2021-01-13 19:33:49,691 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:49,691 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 19:33:49,691 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_folders.py", line 38, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 19:33:49,831 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,831 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,831 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,831 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:49,831 - request.py ] : [  request data ] : {'foldersList': [{'name': 'test', 'children': [{'name': ''}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:49,831 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,831 - request.py ] : [   time total  ] : 0.088456 s
+[INFO - 2021-01-13 19:33:49,831 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:49,831 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 19:33:49,831 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_folders.py", line 38, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 19:33:49,942 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:49,942 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,942 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:49,942 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:49,942 - request.py ] : [  request data ] : {'foldersList': [{'name': '', 'children': [{'name': 'ctest3'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:49,942 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:49,942 - request.py ] : [   time total  ] : 0.092749 s
+[INFO - 2021-01-13 19:33:49,942 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:49,942 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 19:33:49,942 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_folders.py", line 38, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 19:33:50,051 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,051 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,051 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,051 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:50,051 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,051 - request.py ] : [   time total  ] : 0.100915 s
+[INFO - 2021-01-13 19:33:50,051 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffeda9eaace70000b86b844', 'name': '', 'children': [{'id': '5ffeda9eaace70000b86b845', 'name': 'ctest3', 'children': []}]}]}}}
+[INFO - 2021-01-13 19:33:50,051 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,141 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,141 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,141 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,141 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:50,141 - request.py ] : [  request data ] : {'foldersList': []}
+[INFO - 2021-01-13 19:33:50,141 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,141 - request.py ] : [   time total  ] : 0.08485 s
+[INFO - 2021-01-13 19:33:50,141 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:50,141 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,231 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,231 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,231 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,231 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:50,231 - request.py ] : [  request data ] : {'foldersList': [{'name': 'test1', 'children': [{'name': 'ctest1'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:50,231 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,231 - request.py ] : [   time total  ] : 0.082597 s
+[INFO - 2021-01-13 19:33:50,231 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:50,231 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,331 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,331 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,331 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,331 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:50,331 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,331 - request.py ] : [   time total  ] : 0.098015 s
+[INFO - 2021-01-13 19:33:50,331 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffeda9faace70000b86b848', 'name': 'test1', 'children': [{'id': '5ffeda9faace70000b86b849', 'name': 'ctest1', 'children': []}]}]}}}
+[INFO - 2021-01-13 19:33:50,331 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,421 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,421 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,421 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,421 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:50,421 - request.py ] : [  request data ] : {'foldersList': [{'name': '父文件夹', 'children': [{'name': '子文件夹'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:50,425 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,425 - request.py ] : [   time total  ] : 0.081262 s
+[INFO - 2021-01-13 19:33:50,425 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:50,425 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,511 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,511 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,511 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,511 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:50,511 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,511 - request.py ] : [   time total  ] : 0.085705 s
+[INFO - 2021-01-13 19:33:50,511 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffeda9faace70000986b6ed', 'name': '父文件夹', 'children': [{'id': '5ffeda9faace70000986b6ee', 'name': '子文件夹', 'children': []}]}]}}}
+[INFO - 2021-01-13 19:33:50,511 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,581 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,581 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,581 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,581 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:50,581 - request.py ] : [  request data ] : {'foldersList': [{'name': 'long长字符', 'children': [{'name': 'ctest3'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:50,581 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,581 - request.py ] : [   time total  ] : 0.060848 s
+[INFO - 2021-01-13 19:33:50,581 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:50,581 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,681 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,681 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,681 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,681 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:50,681 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,681 - request.py ] : [   time total  ] : 0.097791 s
+[INFO - 2021-01-13 19:33:50,681 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffeda9faace70000b86b84c', 'name': 'long长字符', 'children': [{'id': '5ffeda9faace70000b86b84d', 'name': 'ctest3', 'children': []}]}]}}}
+[INFO - 2021-01-13 19:33:50,681 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,771 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,771 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,771 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,771 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:50,771 - request.py ] : [  request data ] : {'foldersList': [{'name': '', 'children': [{'name': ''}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:50,771 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,771 - request.py ] : [   time total  ] : 0.082877 s
+[INFO - 2021-01-13 19:33:50,771 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:50,771 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 19:33:50,771 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_projects.py", line 39, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 19:33:50,851 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,851 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,851 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,851 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:50,851 - request.py ] : [  request data ] : {'foldersList': [{'name': 'test', 'children': [{'name': ''}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:50,851 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,851 - request.py ] : [   time total  ] : 0.062523 s
+[INFO - 2021-01-13 19:33:50,851 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:50,851 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 19:33:50,851 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_projects.py", line 39, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 19:33:50,951 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:50,951 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,951 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:50,951 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:50,951 - request.py ] : [  request data ] : {'foldersList': [{'name': '', 'children': [{'name': 'ctest3'}], 'projectCount': 0}]}
+[INFO - 2021-01-13 19:33:50,951 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:50,951 - request.py ] : [   time total  ] : 0.088512 s
+[INFO - 2021-01-13 19:33:50,951 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:50,951 - request.py ] : ----------------------------------------------------------------------------------------------------
+[ERROR - 2021-01-13 19:33:50,951 - conftest.py ] : pytest_runtest_call caught exception:
+Traceback (most recent call last):
+  File "D:\API\tests\conftest.py", line 13, in pytest_runtest_call
+    __multicall__.execute()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 135, in execute
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 143, in pytest_runtest_call
+    raise e
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\runner.py", line 135, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 1477, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\87859\PycharmProjects\zxx\venv\lib\site-packages\_pytest\python.py", line 182, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "D:\API\tests\test_qdes\test_projects.py", line 39, in test_add_folders_fail
+    assert result.json()['code'] != 0
+AssertionError: assert 0 != 0
+[INFO - 2021-01-13 19:33:51,091 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,091 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:51,091 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:51,091 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:51,091 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,091 - request.py ] : [   time total  ] : 0.118446 s
+[INFO - 2021-01-13 19:33:51,091 - request.py ] : [ response json ] : {'code': 0, 'data': {'data': {'nofolders': {'count': 39}, 'shares': {'count': 0, 'unread_count': 0}, 'total': {'count': 39}, 'folders': [{'id': '5ffeda9faace70000986b6f1', 'name': '', 'children': [{'id': '5ffeda9faace70000986b6f2', 'name': 'ctest3', 'children': []}]}]}}}
+[INFO - 2021-01-13 19:33:51,091 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,181 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,181 - request.py ] : [      api      ] : /api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:51,181 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/qdes/v3/projects/folders/
+[INFO - 2021-01-13 19:33:51,181 - request.py ] : [     method    ] : PUT
+[INFO - 2021-01-13 19:33:51,181 - request.py ] : [  request data ] : {'foldersList': []}
+[INFO - 2021-01-13 19:33:51,181 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,181 - request.py ] : [   time total  ] : 0.085227 s
+[INFO - 2021-01-13 19:33:51,181 - request.py ] : [ response json ] : {'code': 0, 'data': {}}
+[INFO - 2021-01-13 19:33:51,181 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,261 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,261 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:51,261 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:51,261 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:51,261 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin', 'password': 'zxx12345'}
+[INFO - 2021-01-13 19:33:51,261 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,261 - request.py ] : [   time total  ] : 0.079043 s
+[INFO - 2021-01-13 19:33:51,261 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1NDQ4MzIsImlhdCI6MTYxMDUzNzYzMiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjMyLCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjOGI5OTZjNjdkYWVkZDI1ZGFjZjAzIiwidW5hbWUiOiJuYW1lMSIsImF2YXRhciI6Imh0dHA6Ly90aGlyZHd4LnFsb2dvLmNuL21tb3Blbi9RM2F1SGd6d3pNN0ZpY0VuUmQ1QWlja2VYQ3FEdWNNVTV1Z3BGNE1mR1R0NG5ZQnVmY3pNaWNIRzhTUDdqZHhCTmJkV3dXc1ZtMkhoTkpoZHRJNkR2ZHBRd1BtV1hta3B5NGVkaWJXeTFBN3N1Z1kvMTMyIiwic3VwZXIiOjF9.-XWHjtMbbsEtsZwjVytSBk3MTqK5zA7KgiPbzRcapq4', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjk2MzIsImlhdCI6MTYxMDUzNzYzMiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjMyLCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmYzhiOTk2YzY3ZGFlZGQyNWRhY2YwMyJ9.eEA1D6O9sZMu0NymYuGicAGGDCuPUdhp90-n7y6YqG8', 'growingio': {'loginUserId': '5fc8b996c67daedd25dacf03test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 19:33:51,261 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,361 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,361 - request.py ] : [      api      ] : /api/authorize/company/
+[INFO - 2021-01-13 19:33:51,361 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/company/
+[INFO - 2021-01-13 19:33:51,361 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:51,361 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,361 - request.py ] : [   time total  ] : 0.090677 s
+[INFO - 2021-01-13 19:33:51,361 - request.py ] : [ response json ] : {'code': 0, 'data': {'code': 'bvt', 'name': 'bvt', 'status': 0, 'expiryDT': '2099/12/31 00:00:00', 'free_expiryDT': '2021/01/02 00:00:00', 'skin': {'status': True, 'login_bg_img': {}, 'login_color': '#2672FF', 'logo': {}, 'name': '', 'title': '', 'hideLoginChanger': False}, 'publicKey': '', 'edition': 1, 'is_complete': True, 'email': '', 'org_name': 'bvt', 'contact': '15901005428', 'footer_edit': False, 'industry': {'code': 5, 'name': '地产', 'id': '5dc8ff73c525ed748396fee4'}, 'mmodules': ['USER', 'ANALYSIS_WORKSHEET', 'ANALYSIS_DASHBOARD', 'PROJECT', 'ACTION_ALERT', 'ACTION_TICKET', 'ANALYSIS_TXTANLS', 'MEMBER', 'LIB'], 'is_xm': True, 'createdDT': '2020/12/03 18:10:31'}}
+[INFO - 2021-01-13 19:33:51,361 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,451 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,451 - request.py ] : [      api      ] : /api/user/users/self/
+[INFO - 2021-01-13 19:33:51,451 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/user/users/self/
+[INFO - 2021-01-13 19:33:51,451 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:51,451 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,451 - request.py ] : [   time total  ] : 0.087691 s
+[INFO - 2021-01-13 19:33:51,451 - request.py ] : [ response json ] : {'code': 0, 'data': {'id': '5fc8b996c67daedd25dacf03', 'orgID': '5fc8b996aace70000cb1ac2b', 'userName': 'superadmin', 'name': 'name1', 'avatar': 'http://thirdwx.qlogo.cn/mmopen/Q3auHgzwzM7FicEnRd5AickeXCqDucMU5ugpF4MfGTt4nYBufczMicHG8SP7jdxBNbdWwWsVm2HhNJhdtI6DvdpQwPmWXmkpy4edibWy1A7sugY/132', 'email': 'zongxiuxuan001@163.com', 'mobile': '15467676787', 'status': 1, 'roleList': ['5fc8b996c67daedd25daceef'], 'content': '', 'edition': 1, 'show_introduction': True, 'wx_unionid': '', 'wx_openid': '', 'wx_offi_openid': '', 'wx_nickname': '', 'is_accept': True, 'last_login_time': '2021/01/13 19:33:52', 'register_ip': '116.232.49.149', 'is_inner_user': True, 'createdID': None, 'createdDT': '2020/12/03 18:10:30', 'updatedID': None, 'updatedDT': '2021/01/13 19:33:52', 'record_flag': 1, 'super': True, 'has_password': True, 'groups': []}}
+[INFO - 2021-01-13 19:33:51,451 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,541 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,541 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:51,541 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:51,541 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:51,541 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'zongxiuxuan001@163.com', 'password': '1234567890'}
+[INFO - 2021-01-13 19:33:51,541 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,541 - request.py ] : [   time total  ] : 0.085401 s
+[INFO - 2021-01-13 19:33:51,541 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1NDQ4MzIsImlhdCI6MTYxMDUzNzYzMiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjMyLCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjOGI5OTZjNjdkYWVkZDI1ZGFjZjAzIiwidW5hbWUiOiJuYW1lMSIsImF2YXRhciI6Imh0dHA6Ly90aGlyZHd4LnFsb2dvLmNuL21tb3Blbi9RM2F1SGd6d3pNN0ZpY0VuUmQ1QWlja2VYQ3FEdWNNVTV1Z3BGNE1mR1R0NG5ZQnVmY3pNaWNIRzhTUDdqZHhCTmJkV3dXc1ZtMkhoTkpoZHRJNkR2ZHBRd1BtV1hta3B5NGVkaWJXeTFBN3N1Z1kvMTMyIiwic3VwZXIiOjF9.-XWHjtMbbsEtsZwjVytSBk3MTqK5zA7KgiPbzRcapq4', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjk2MzIsImlhdCI6MTYxMDUzNzYzMiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjMyLCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmYzhiOTk2YzY3ZGFlZGQyNWRhY2YwMyJ9.eEA1D6O9sZMu0NymYuGicAGGDCuPUdhp90-n7y6YqG8', 'growingio': {'loginUserId': '5fc8b996c67daedd25dacf03test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 19:33:51,541 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,631 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,631 - request.py ] : [      api      ] : /api/authorize/company/
+[INFO - 2021-01-13 19:33:51,631 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/company/
+[INFO - 2021-01-13 19:33:51,631 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:51,631 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,631 - request.py ] : [   time total  ] : 0.084789 s
+[INFO - 2021-01-13 19:33:51,631 - request.py ] : [ response json ] : {'code': 0, 'data': {'code': 'bvt', 'name': 'bvt', 'status': 0, 'expiryDT': '2099/12/31 00:00:00', 'free_expiryDT': '2021/01/02 00:00:00', 'skin': {'status': True, 'login_bg_img': {}, 'login_color': '#2672FF', 'logo': {}, 'name': '', 'title': '', 'hideLoginChanger': False}, 'publicKey': '', 'edition': 1, 'is_complete': True, 'email': '', 'org_name': 'bvt', 'contact': '15901005428', 'footer_edit': False, 'industry': {'code': 5, 'name': '地产', 'id': '5dc8ff73c525ed748396fee4'}, 'mmodules': ['USER', 'ANALYSIS_WORKSHEET', 'ANALYSIS_DASHBOARD', 'PROJECT', 'ACTION_ALERT', 'ACTION_TICKET', 'ANALYSIS_TXTANLS', 'MEMBER', 'LIB'], 'is_xm': True, 'createdDT': '2020/12/03 18:10:31'}}
+[INFO - 2021-01-13 19:33:51,631 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,711 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,711 - request.py ] : [      api      ] : /api/user/users/self/
+[INFO - 2021-01-13 19:33:51,711 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/user/users/self/
+[INFO - 2021-01-13 19:33:51,711 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:51,711 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,711 - request.py ] : [   time total  ] : 0.075791 s
+[INFO - 2021-01-13 19:33:51,711 - request.py ] : [ response json ] : {'code': 0, 'data': {'id': '5fc8b996c67daedd25dacf03', 'orgID': '5fc8b996aace70000cb1ac2b', 'userName': 'superadmin', 'name': 'name1', 'avatar': 'http://thirdwx.qlogo.cn/mmopen/Q3auHgzwzM7FicEnRd5AickeXCqDucMU5ugpF4MfGTt4nYBufczMicHG8SP7jdxBNbdWwWsVm2HhNJhdtI6DvdpQwPmWXmkpy4edibWy1A7sugY/132', 'email': 'zongxiuxuan001@163.com', 'mobile': '15467676787', 'status': 1, 'roleList': ['5fc8b996c67daedd25daceef'], 'content': '', 'edition': 1, 'show_introduction': True, 'wx_unionid': '', 'wx_openid': '', 'wx_offi_openid': '', 'wx_nickname': '', 'is_accept': True, 'last_login_time': '2021/01/13 19:33:52', 'register_ip': '116.232.49.149', 'is_inner_user': True, 'createdID': None, 'createdDT': '2020/12/03 18:10:30', 'updatedID': None, 'updatedDT': '2021/01/13 19:33:52', 'record_flag': 1, 'super': True, 'has_password': True, 'groups': []}}
+[INFO - 2021-01-13 19:33:51,711 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,791 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,791 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:51,791 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:51,791 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:51,791 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': '17839236545', 'password': '1234567890'}
+[INFO - 2021-01-13 19:33:51,791 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,791 - request.py ] : [   time total  ] : 0.07539 s
+[INFO - 2021-01-13 19:33:51,791 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1NDQ4MzIsImlhdCI6MTYxMDUzNzYzMiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjMyLCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjZjE4M2JhYWNlNzAwMDBiYTQ2MzgyIiwidW5hbWUiOiJ0ZXN0MDIiLCJhdmF0YXIiOiIifQ.TJseFx1jP3acTuJB-XNKn9gzz_yqPxWWo9HNUH9hGMI', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjk2MzIsImlhdCI6MTYxMDUzNzYzMiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjMyLCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmY2YxODNiYWFjZTcwMDAwYmE0NjM4MiJ9.CnnykzvnVszt6M0v1wCcSC1V0R893ZfBmlCiCualuQQ', 'growingio': {'loginUserId': '5fcf183baace70000ba46382test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 19:33:51,791 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,876 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,876 - request.py ] : [      api      ] : /api/authorize/company/
+[INFO - 2021-01-13 19:33:51,876 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/company/
+[INFO - 2021-01-13 19:33:51,876 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:51,876 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,876 - request.py ] : [   time total  ] : 0.081449 s
+[INFO - 2021-01-13 19:33:51,876 - request.py ] : [ response json ] : {'code': 0, 'data': {'code': 'bvt', 'name': 'bvt', 'status': 0, 'expiryDT': '2099/12/31 00:00:00', 'free_expiryDT': '2021/01/02 00:00:00', 'skin': {'status': True, 'login_bg_img': {}, 'login_color': '#2672FF', 'logo': {}, 'name': '', 'title': '', 'hideLoginChanger': False}, 'publicKey': '', 'edition': 1, 'is_complete': True, 'email': '', 'org_name': 'bvt', 'contact': '15901005428', 'footer_edit': False, 'industry': {'code': 5, 'name': '地产', 'id': '5dc8ff73c525ed748396fee4'}, 'mmodules': ['USER', 'ANALYSIS_WORKSHEET', 'ANALYSIS_DASHBOARD', 'PROJECT', 'ACTION_ALERT', 'ACTION_TICKET', 'ANALYSIS_TXTANLS', 'MEMBER', 'LIB'], 'is_xm': True, 'createdDT': '2020/12/03 18:10:31'}}
+[INFO - 2021-01-13 19:33:51,876 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,956 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:51,956 - request.py ] : [      api      ] : /api/user/users/self/
+[INFO - 2021-01-13 19:33:51,956 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/user/users/self/
+[INFO - 2021-01-13 19:33:51,956 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:51,956 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:51,961 - request.py ] : [   time total  ] : 0.076628 s
+[INFO - 2021-01-13 19:33:51,961 - request.py ] : [ response json ] : {'code': 0, 'data': {'id': '5fcf183baace70000ba46382', 'orgID': '5fc8b996aace70000cb1ac2b', 'userName': 'test02', 'name': 'test02', 'avatar': '', 'email': 'zongxiuxuan002@163.com', 'mobile': '17839236545', 'status': 1, 'roleList': ['5fcf9769aace70000bb36f1c'], 'content': '', 'edition': 1, 'show_introduction': True, 'wx_unionid': '', 'wx_openid': '', 'wx_offi_openid': '', 'wx_nickname': '', 'is_accept': False, 'last_login_time': '2021/01/13 19:33:52', 'register_ip': '', 'is_inner_user': True, 'createdID': None, 'createdDT': '2020/12/08 14:07:55', 'updatedID': None, 'updatedDT': '2021/01/13 19:33:52', 'record_flag': 1, 'super': False, 'has_password': True, 'groups': [{'id': '5fc8b997f9f4f6001bb2aead', 'orgID': '5fc8b996aace70000cb1ac2b', 'code': 'AUTO_12222222', 'seq': 5, 'title': '测试2店', 'groupType': 1, 'groupLevelID': '5fcf4715aace70000922c682', 'status': 0, 'contact': '', 'email': '', 'adminID': None, 'adminName': '', 'createdID': None, 'createdDT': '2020/12/03 18:10:31', 'updatedID': None, 'updatedDT': '2020/12/03 18:10:31', 'record_flag': 1}]}}
+[INFO - 2021-01-13 19:33:51,961 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,061 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,061 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,061 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,061 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:52,061 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': None, 'user_name': '17839236545', 'password': '1234567890'}
+[INFO - 2021-01-13 19:33:52,061 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:52,061 - request.py ] : [   time total  ] : 0.091333 s
+[INFO - 2021-01-13 19:33:52,061 - request.py ] : [ response json ] : {'code': 0, 'data': {'org_code': 'bvt', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1NDQ4MzIsImlhdCI6MTYxMDUzNzYzMiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjMyLCJvcmdfZXhwIjoiMjA5OS0xMi0zMSIsIm9yZ19jb2RlIjoiYnZ0Iiwib3JnX2lkIjoiNWZjOGI5OTZhYWNlNzAwMDBjYjFhYzJiIiwidWlkIjoiNWZjZjE4M2JhYWNlNzAwMDBiYTQ2MzgyIiwidW5hbWUiOiJ0ZXN0MDIiLCJhdmF0YXIiOiIifQ.TJseFx1jP3acTuJB-XNKn9gzz_yqPxWWo9HNUH9hGMI', 'refresh_token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTMxMjk2MzIsImlhdCI6MTYxMDUzNzYzMiwiaXNzIjoiSURZOk1YIiwibmJmIjoxNjEwNTM3NjMyLCJvcmdfY29kZSI6ImJ2dCIsInVpZCI6IjVmY2YxODNiYWFjZTcwMDAwYmE0NjM4MiJ9.CnnykzvnVszt6M0v1wCcSC1V0R893ZfBmlCiCualuQQ', 'growingio': {'loginUserId': '5fcf183baace70000ba46382test', 'identity_ppl': '内部用户', 'pricing_ppl': 'all_pack', 'environment_ppl': '非正式环境', 'corporation_ppl': 'bvt', 'internalSet_ppl': '外部场景'}}}
+[INFO - 2021-01-13 19:33:52,061 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,151 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,151 - request.py ] : [      api      ] : /api/authorize/company/
+[INFO - 2021-01-13 19:33:52,151 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/company/
+[INFO - 2021-01-13 19:33:52,151 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:52,151 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:52,151 - request.py ] : [   time total  ] : 0.086514 s
+[INFO - 2021-01-13 19:33:52,151 - request.py ] : [ response json ] : {'code': 0, 'data': {'code': 'bvt', 'name': 'bvt', 'status': 0, 'expiryDT': '2099/12/31 00:00:00', 'free_expiryDT': '2021/01/02 00:00:00', 'skin': {'status': True, 'login_bg_img': {}, 'login_color': '#2672FF', 'logo': {}, 'name': '', 'title': '', 'hideLoginChanger': False}, 'publicKey': '', 'edition': 1, 'is_complete': True, 'email': '', 'org_name': 'bvt', 'contact': '15901005428', 'footer_edit': False, 'industry': {'code': 5, 'name': '地产', 'id': '5dc8ff73c525ed748396fee4'}, 'mmodules': ['USER', 'ANALYSIS_WORKSHEET', 'ANALYSIS_DASHBOARD', 'PROJECT', 'ACTION_ALERT', 'ACTION_TICKET', 'ANALYSIS_TXTANLS', 'MEMBER', 'LIB'], 'is_xm': True, 'createdDT': '2020/12/03 18:10:31'}}
+[INFO - 2021-01-13 19:33:52,151 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,241 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,241 - request.py ] : [      api      ] : /api/user/users/self/
+[INFO - 2021-01-13 19:33:52,241 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/user/users/self/
+[INFO - 2021-01-13 19:33:52,241 - request.py ] : [     method    ] : GET
+[INFO - 2021-01-13 19:33:52,241 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:52,241 - request.py ] : [   time total  ] : 0.087425 s
+[INFO - 2021-01-13 19:33:52,241 - request.py ] : [ response json ] : {'code': 0, 'data': {'id': '5fcf183baace70000ba46382', 'orgID': '5fc8b996aace70000cb1ac2b', 'userName': 'test02', 'name': 'test02', 'avatar': '', 'email': 'zongxiuxuan002@163.com', 'mobile': '17839236545', 'status': 1, 'roleList': ['5fcf9769aace70000bb36f1c'], 'content': '', 'edition': 1, 'show_introduction': True, 'wx_unionid': '', 'wx_openid': '', 'wx_offi_openid': '', 'wx_nickname': '', 'is_accept': False, 'last_login_time': '2021/01/13 19:33:52', 'register_ip': '', 'is_inner_user': True, 'createdID': None, 'createdDT': '2020/12/08 14:07:55', 'updatedID': None, 'updatedDT': '2021/01/13 19:33:52', 'record_flag': 1, 'super': False, 'has_password': True, 'groups': [{'id': '5fc8b997f9f4f6001bb2aead', 'orgID': '5fc8b996aace70000cb1ac2b', 'code': 'AUTO_12222222', 'seq': 5, 'title': '测试2店', 'groupType': 1, 'groupLevelID': '5fcf4715aace70000922c682', 'status': 0, 'contact': '', 'email': '', 'adminID': None, 'adminName': '', 'createdID': None, 'createdDT': '2020/12/03 18:10:31', 'updatedID': None, 'updatedDT': '2020/12/03 18:10:31', 'record_flag': 1}]}}
+[INFO - 2021-01-13 19:33:52,241 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,341 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,341 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,341 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,341 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:52,341 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin', 'password': '12345678901'}
+[INFO - 2021-01-13 19:33:52,341 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:52,341 - request.py ] : [   time total  ] : 0.088831 s
+[INFO - 2021-01-13 19:33:52,341 - request.py ] : [ response json ] : {'code': 103, 'msg': 'user_name or password not true.'}
+[INFO - 2021-01-13 19:33:52,341 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,421 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,421 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,421 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,421 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:52,426 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin1', 'password': '1234567890'}
+[INFO - 2021-01-13 19:33:52,426 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:52,426 - request.py ] : [   time total  ] : 0.070108 s
+[INFO - 2021-01-13 19:33:52,426 - request.py ] : [ response json ] : {'code': 105, 'msg': 'user_name or password not true.'}
+[INFO - 2021-01-13 19:33:52,426 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,511 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,511 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,511 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,511 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:52,511 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': '', 'password': '1234567890'}
+[INFO - 2021-01-13 19:33:52,511 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:52,511 - request.py ] : [   time total  ] : 0.078261 s
+[INFO - 2021-01-13 19:33:52,511 - request.py ] : [ response json ] : {'code': 402, 'msg': 'user_name is empty.'}
+[INFO - 2021-01-13 19:33:52,511 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,601 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,601 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,601 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,601 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:52,601 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt', 'user_name': 'superadmin', 'password': ''}
+[INFO - 2021-01-13 19:33:52,601 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:52,601 - request.py ] : [   time total  ] : 0.084729 s
+[INFO - 2021-01-13 19:33:52,601 - request.py ] : [ response json ] : {'code': 403, 'msg': 'password is empty.'}
+[INFO - 2021-01-13 19:33:52,601 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,691 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,691 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,691 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,691 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:52,691 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': 'bvt_test', 'user_name': 'superadmin', 'password': '1234567890'}
+[INFO - 2021-01-13 19:33:52,691 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:52,691 - request.py ] : [   time total  ] : 0.07915 s
+[INFO - 2021-01-13 19:33:52,691 - request.py ] : [ response json ] : {'code': 101, 'msg': 'user_name or password not true.'}
+[INFO - 2021-01-13 19:33:52,691 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,771 - request.py ] : ----------------------------------------------------------------------------------------------------
+[INFO - 2021-01-13 19:33:52,771 - request.py ] : [      api      ] : /api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,771 - request.py ] : [  request url  ] : https://bvt.xm-test.bestcem.com/api/authorize/v2/token/
+[INFO - 2021-01-13 19:33:52,771 - request.py ] : [     method    ] : POST
+[INFO - 2021-01-13 19:33:52,771 - request.py ] : [  request data ] : {'is_home_page': False, 'org_code': '', 'user_name': '', 'password': ''}
+[INFO - 2021-01-13 19:33:52,771 - request.py ] : [  status code  ] : 200
+[INFO - 2021-01-13 19:33:52,771 - request.py ] : [   time total  ] : 0.072588 s
+[INFO - 2021-01-13 19:33:52,771 - request.py ] : [ response json ] : {'code': 402, 'msg': 'user_name is empty.'}
+[INFO - 2021-01-13 19:33:52,771 - request.py ] : ----------------------------------------------------------------------------------------------------

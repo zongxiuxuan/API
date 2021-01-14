@@ -12,32 +12,37 @@ log.Logging()
 
 
 def pytest_runtest_call(__multicall__):
-    try:
-        __multicall__.execute()
-    except KeyboardInterrupt:
-        raise
-    except:
-        logging.exception('pytest_runtest_call caught exception:')
-        raise
+	try:
+		__multicall__.execute()
+	except KeyboardInterrupt:
+		raise
+	except:
+		logging.exception('pytest_runtest_call caught exception:')
+		raise
 
 
 @pytest.fixture(scope='session')
 def set_headers(user='admin_user'):
-    url = f'{_config["env"]}/api/authorize/v2/token/'
-    user = api_yaml.get_user(user)
-    payload = {
-        'is_home_page': False,
-        'org_code': user['org_code'],
-        'user_name': user['user_name'],
-        'password': user['password']
-    }
-    result = request.post(url, payload=payload, env=False)
-    token = f"Bearer {result.json()['data']['token']}"
-    return token
+	url = f'{_config["env"]}/api/authorize/v2/token/'
+	user = api_yaml.get_user(user)
+	payload = {
+		'is_home_page': False,
+		'org_code': user['org_code'],
+		'user_name': user['user_name'],
+		'password': user['password']
+	}
+	result = request.post(url, payload=payload, env=False)
+	token = f"Bearer {result.json()['data']['token']}"
+	return token
 
 
 @pytest.fixture(scope='session', autouse=True)
 def send_report():
-    print("test begin")
-    yield
-    send_email
+	yield
+	flag = _config['email']['flag']
+	stmp_address = _config['email']['stmp_address']
+	stmp_password = _config['email']['stmp_password']
+	stmp_server = _config['email']['stmp_server']
+	stmp_port = _config['email']['stmp_port']
+	send_to = _config['email']['send_to']
+	send_email.sendReport(flag,send_to,stmp_address,stmp_password,stmp_server,stmp_port)

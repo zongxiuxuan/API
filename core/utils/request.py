@@ -1,7 +1,7 @@
 import requests
 import urllib3
 import logging
-from core.utils import log
+from utils import log
 from core.utils.api_yaml import _CONFIG
 
 log.Logging()

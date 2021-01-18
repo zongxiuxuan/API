@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import jsonpath
-from utils import getDir
 from utils import read_yaml
 
-_APIS = read_yaml.read_yaml(f'{getDir.coreDir}/bash_url.yaml')
-_CONFIG = read_yaml.read_yaml(f'{getDir.proDir}/config.yaml')
+_APIS = read_yaml.read_yaml('/core/bash_url.yaml')
+_CONFIG = read_yaml.read_yaml('/config.yaml')
 
 
 def get_api(expr):

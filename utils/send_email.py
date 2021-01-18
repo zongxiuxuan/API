@@ -5,8 +5,6 @@ from email import encoders
 from email.header import Header
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
-from utils import getDir
-import os
 
 
 # 使用email模块

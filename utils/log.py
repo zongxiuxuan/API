@@ -2,9 +2,10 @@ import sys
 import time
 import logging
 from utils.method import mkdir
+from utils import read_yaml
 from utils import getDir
 
-
+_config = read_yaml.read_yaml("/config.yaml")
 class Logging:
     """setup logging
 
@@ -40,10 +41,10 @@ class Logging:
         file_handler.setLevel(logging.INFO)
 
         """
-            第三步，再创建一个handler，用于输出到控制台
+            第三步，再创建一个handler，用于输出到控制台,受配置文件log_level影响
         """
         stdout_handler = logging.StreamHandler(sys.stdout)
-        stdout_handler.setLevel(logging.INFO)
+        stdout_handler.setLevel(_config['log_level'])
 
         """
             第四步，定义handler的输出格式

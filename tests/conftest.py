@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 import logging
 import pytest
-from core.utils import api_yaml, request, log
-from utils import getDir
+from core.utils import api_yaml, request
+from utils import log
 from utils import read_yaml
 from utils import send_email
 import time
 
-_config = read_yaml.read_yaml(f"{getDir.proDir}/config.yaml")
+_config = read_yaml.read_yaml("/config.yaml")
 log.Logging()
 
 

@@ -1,0 +1,25 @@
+Authorize:
+  -
+    name: post_company_token
+    path: '/test'
+    method: post
+    token: True
+    payload:
+      is_home_page: False
+      org_code: 'bvt'
+      user_name: 'superadmin'
+      password: '1234567890'
+    response:
+      code: 0
+  - name: test2
+    path: '/test/test2'
+    method: get
+    token: True
+    params:
+      is_home_page: False
+      org_code: 'bvt'
+      user_name: 'superadmin'
+      password: '1234567890'
+    response:
+      code: 0
+
